@@ -21,9 +21,10 @@ function OtpGenerator() {
   };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+    <div className='main-container'>
+    <img className='background-glow' src="/grid.png" alt="" />
       <h1>OTP Generator</h1>
-      <div>
+      <div className='setLength-btn'>
         <button onClick={() => setOtpLength(4)}>4 Digit</button>
         <button onClick={() => setOtpLength(6)} style={{ marginLeft: '10px' }}>
           6 Digit
@@ -40,7 +41,12 @@ function OtpGenerator() {
           <button onClick={handleCopyOtp}>Copy OTP</button>
         </div>
       )}
+     
+      <footer>
+            A simple project by <a href="https://github.com/lalitpatil891" target="_blank">Lalit Patil </a>– OTP Generator! &#10084;
+          </footer>
     </div>
+     
   );
 }
 
