@@ -23,24 +23,24 @@ function OtpGenerator() {
   return (
     <div className='main-container'>
     <img className='background-glow' src="/grid.png" alt="" />
-      <h1>OTP Generator</h1>
+      <h2>OTP Generator</h2>
+      <p> Generate secure 4 or 6-digit OTPs instantly with one click.</p>
       <div className='setLength-btn'>
-        <button onClick={() => setOtpLength(4)}>4 Digit</button>
-        <button onClick={() => setOtpLength(6)} style={{ marginLeft: '10px' }}>
-          6 Digit
-        </button>
+        <button className={`btn-grad ${otpLength === 4 ? "active" : ""}`} onClick={() => setOtpLength(4)}>4 Digit</button>
+        <button className={`btn-grad ${otpLength === 6 ? "active" : ""}`} onClick={() => setOtpLength(6)}>6 Digit</button>
       </div>
 
-      <button onClick={() => generateOtp(otpLength)} style={{ marginTop: '20px' }}>
-        Generate OTP
-      </button>
+     
 
       {otp && (
         <div style={{ marginTop: '20px' }}>
-          <h2>{otp}</h2>
-          <button onClick={handleCopyOtp}>Copy OTP</button>
+          <h1>{otp}</h1>
+
+           
+            <button className='copy-btn' onClick={handleCopyOtp}>Copy OTP</button>
         </div>
       )}
+     <button className='main-btn' onClick={() => generateOtp(otpLength)}>Generate OTP</button>
      
       <footer>
             A simple project by <a href="https://github.com/lalitpatil891" target="_blank">Lalit Patil </a>– OTP Generator! &#10084;

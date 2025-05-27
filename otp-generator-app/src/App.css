@@ -2,7 +2,6 @@
   caret-color: transparent;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   user-select: none;
-
 }
 
 body {
@@ -11,113 +10,359 @@ body {
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
-.main-container {
-  width: 50px auto;
-  height: 100vh;
-  background-color: transparent;
-  text-align: center;
-  border: 1px solid red;
-  position: relative;
-  z-index: 1;
+/*------------ Desktop Screen ---------------------*/
+
+@media (min-width:601px) {
+
+  .main-container {
+    width: 50px auto;
+    height: 100vh;
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .background-glow {
+    /* border: 1px solid red; */
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  h2 {
+    margin: 30px auto;
+    padding: 10px;
+    color: darkslategray;
+    border-bottom: 3px dashed darkslategray;
+    border-top: 3px dashed darkslategray;
+    width: fit-content;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: small;
+  }
+
+  h1 {
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 80px;
+    color: darkslategrey;
+  }
+
+  .setLength-btn {
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .btn-grad {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    padding: 10px 16px;
+    font-size: 14 px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+  }
+
+  .btn-grad:hover {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  }
+
+  .btn-grad.active {
+    background-color: transparent;
+    color: dimgrey;
+    border: 2px solid dimgray;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+
+  .setLength-btn {
+    margin-top: 20px;
+  }
+
+  .message {
+    margin-top: 15px;
+    font-size: 18px;
+    color: green;
+  }
+
+  .main-btn {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bold;
+    padding: 10px 16px;
+    font-size: 14 px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .main-btn:hover {
+    background-color: darkslategray;
+    color: white;
+  }
+
+
+  .copy-btn {
+    background-color: transparent;
+    border: 2px solid darkslategrey;
+    color: darkslategrey;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  /*------- footer ---------*/
+  footer {
+    width: 100%;
+    padding: 22px 0px;
+    color: darkslategray;
+    position: fixed;
+    font-size: 2vh;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: rgb(9, 122, 101);
+  }
+
+  footer a::after {
+    content: "Visit my GitHub 🚀";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: darkslategray;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    caret-color: transparent;
+    outline: none;
+    user-select: none;
+  }
+
+  footer a:hover::after {
+    opacity: 1;
+    outline: 2px dashed;
+  }
+
 }
 
-.background-glow {
-  /* border: 1px solid red; */
-  left: 0px;
-  bottom: 0px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  opacity: 0.2;
-  z-index: -1;
-}
+/*========== Mobile Screen =================*/
+
+@media (max-width:600px) {
+
+  .main-container {
+    width: 50px auto;
+    height: 100vh;
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .background-glow {
+    /* border: 1px solid red; */
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  h2 {
+    margin: 30px auto;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+    color: darkslategray;
+    /* border-bottom: 3px dashed darkslategray;
+    border-top: 3px dashed darkslategray; */
+    width: fit-content;
+
+  }
+
+  p {
+    text-align: center;
+    font-size: 16px;
+    margin: 40px;
+  }
+
+  h1 {
+
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 10px 10px;
+    border-radius: 12px;
+    font-size: 80px;
+    color: darkslategrey;
+  }
+
+  .setLength-btn {
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .btn-grad {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    padding: 8px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+  }
+
+  .btn-grad:hover {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  }
+
+  .btn-grad.active {
+    background-color: transparent;
+    color: dimgrey;
+    border: 2px solid dimgray;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+  }
+
+  .setLength-btn {
+    margin-top: 20px;
+  }
+
+  .message {
+    margin-top: 15px;
+    font-size: 18px;
+    color: green;
+  }
+
+  .main-btn {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bold;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 60px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .main-btn:hover {
+    background-color: darkslategray;
+    color: white;
+  }
 
 
+  .copy-btn {
+    background-color: transparent;
+    border: 2px solid darkslategrey;
+    color: darkslategrey;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
 
-.setLength-btn {
-  margin: 20px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid blue;
-  width: fit-content;
-}
+  /*------- footer ---------*/
+  footer {
+    width: 100%;
+    padding: 15px 0px;
+    color: black;
+    position: fixed;
+    font-size: 12px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin: 0px auto;
+  }
 
-.setLength-btn button {
-  padding: 10px 20px;
-  font-size: large;
-  font-weight: bolder;
-  border-radius: 8px;
-  border: none;
-}
+  footer a {
+    text-decoration: none;
+    color: rgb(9, 122, 101);
+  }
 
+  footer a::after {
+    content: "Visit my GitHub 🚀";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: black;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    caret-color: transparent;
+    outline: none;
+    user-select: none;
+  }
 
-.btn-grad {
-  background-image: linear-gradient(to right, #1c92d2 0%, #f2fcfe 51%, #1c92d2 100%)
-}
+  footer a:hover::after {
+    opacity: 1;
+    outline: 2px dashed;
+  }
 
-.btn-grad {
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block;
-}
-
-.btn-grad:hover {
-  background-position: right center;
-  /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
-}
-
-
-/*------- footer ---------*/
-footer {
-  width: 100%;
-  padding: 22px 0px;
-  color: white;
-  position: fixed;
-  font-size: 2vh;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  margin: 0px auto;
-}
-
-footer a {
-  text-decoration: none;
-  color: rgb(9, 122, 101);
-}
-
-footer a::after {
-  content: "Visit my GitHub 🚀";
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: transparent;
-  color: white;
-  padding: 5px 10px;
-  font-size: 14px;
-  border-radius: 5px;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none;
-  caret-color: transparent;
-  outline: none;
-  user-select: none;
-}
-
-footer a:hover::after {
-
-  opacity: 1;
-  outline: 2px dashed;
 }
