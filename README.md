@@ -2,6 +2,7 @@
 
 A simple and responsive OTP (One-Time Password) generator built using **React**. Easily generate **4-digit or 6-digit OTPs**, copy them with a click, and use them in your apps for authentication or testing purposes.
 
+![Go Live](https://otp-generatorbylp.netlify.app/)
 ---
 
 ## 🚀 Features
