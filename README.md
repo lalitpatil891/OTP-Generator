@@ -18,10 +18,11 @@ A simple and responsive OTP (One-Time Password) generator built using **React**.
 ## 📷 Screenshot
 
 <!-- Desktop Screenshots -->
-<img src="https://github.com/lalitpatil891/OTP-Generator/blob/main/otp-generator-app/screenShots/1.png" width="600" alt="OTP Generator Screenshot" /> <img src="https://github.com/lalitpatil891/OTP-Generator/blob/main/otp-generator-app/screenShots/mobile-2.jpg" width="300" alt="OTP Generator Mobile Screenshot" />
+<img src="https://github.com/lalitpatil891/OTP-Generator/blob/main/otp-generator-app/screenShots/1.png" width="100%" alt="OTP Generator Screenshot" /> 
+<img src="https://github.com/lalitpatil891/OTP-Generator/blob/main/otp-generator-app/screenShots/2.png" width="100%" alt="OTP Generator Screenshot" />
 <!-- Mobile Screenshot -->
+<img src="https://github.com/lalitpatil891/OTP-Generator/blob/main/otp-generator-app/screenShots/mobile-2.jpg" width="300" alt="OTP Generator Mobile Screenshot" />
 
-<img src="https://github.com/lalitpatil891/OTP-Generator/blob/main/otp-generator-app/screenShots/2.png" width="600" alt="OTP Generator Screenshot" />
 ---
 
 ## 🛠️ Tech Stack
