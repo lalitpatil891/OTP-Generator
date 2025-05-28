@@ -9,6 +9,7 @@ A simple and responsive OTP (One-Time Password) generator built using **React**.
 - 🔢 Choose between 4-digit and 6-digit OTPs
 - 🔁 Generate random OTPs
 - 📋 Copy OTP to clipboard
+- 🔐 Enter and verify OTP
 - 💡 Simple and clean UI
 - ✅ Built with React and modern JavaScript
 
@@ -19,6 +20,8 @@ A simple and responsive OTP (One-Time Password) generator built using **React**.
 ![OTP Generator Screenshot](https://github.com/lalitpatil891/OTP-Generator/blob/main/otp-generator-app/screenShots/1.png) <!-- Add a screenshot here -->
 
 ![OTP Generator Screenshot](https://github.com/lalitpatil891/OTP-Generator/blob/main/otp-generator-app/screenShots/2.png)
+
+![OTP Generator Screenshot](https://github.com/lalitpatil891/OTP-Generator/blob/main/otp-generator-app/screenShots/mobile-2.jpg)
 
 ---
 
